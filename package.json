@@ -1,0 +1,19 @@
+{
+  "name": "eth-webd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ishitarastogi/Eth-webD.git"
+  },
+  "author": "Ishita Rastogi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ishitarastogi/Eth-webD/issues"
+  },
+  "homepage": "https://github.com/ishitarastogi/Eth-webD#readme"
+}

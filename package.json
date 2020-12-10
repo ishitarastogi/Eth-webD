@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ishitarastogi/Eth-webD/issues"
   },
-  "homepage": "https://github.com/ishitarastogi/Eth-webD#readme"
+  "homepage": "https://github.com/ishitarastogi/Eth-webD#readme",
+  "dependencies": {
+    "solc": "^0.7.5"
+  }
 }

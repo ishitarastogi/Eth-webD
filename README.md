@@ -27,7 +27,10 @@ This Web3 provider allows your application to communicate with an Ethereum Node.
 
 Almost Evey function of web3 return promise (they are asynchronous)
 
-                                                                    
+async keyword -> It can be placed before a function
+The word “async” before a function means one simple thing: a function always returns a promise.        
+
+await -> The keyword await makes JavaScript wait until that promise settles and returns its result.
 
 
                    

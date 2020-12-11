@@ -1,23 +1,26 @@
 const path = require('path');
-const fs = require('fs');
-const solc = require('solc');
- 
-const helloPath = path.resolve(__dirname, 'Hello.sol');
-const hellosol = fs.readFileSync(helloPath, 'UTF-8');
- 
-var input = {
-    language: 'Solidity',
-    sources: {
-        'hello.sol': {content : hellosol}
-    },
-    settings: {
-        outputSelection: {
-            '*': {
-                '*': [ '*' ]
-            }
-        }
+const fs = require('fs'); // Built-in dependency for file streaming.
+const solc = require('solc'); // Our Solidity compiler
+const helloPath = path.resolve(__dirname,'contracts', 'HelloWorld.sol');
+const content = fs.readFileSync(helloPath, 'utf-8'); // Read the file...
+
+// Format the input for solc compiler:
+const input = {
+  language: 'Solidity',
+  sources: {
+    'HelloWorld.sol' : {
+      content, // The imported content
     }
-};
- 
-var output = JSON.parse(solc.compile(JSON.stringify(input)))
-console.log(solc.compile(hellosol,1).contracts[':Hello']);
+  },
+  settings: {
+    outputSelection: {
+      '*': {
+        '*': ['*']
+      }
+    }
+  }
+}; 
+
+const output = JSON.parse(solc.compile(JSON.stringify(input)));
+
+console.log(output);

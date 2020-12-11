@@ -23,8 +23,11 @@ This module was built to be used internally by Node.js.
 
 Mocha is a feature-rich JavaScript test framework running on Node.js and in the browser, making asynchronous testing
 
-when 
+This Web3 provider allows your application to communicate with an Ethereum Node.
 
+Almost Evey function of web3 return promise (they are asynchronous)
+
+                                                                    
 
 
                    
